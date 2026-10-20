@@ -8,3 +8,9 @@ spring:
     azure:
       servicebus:
         connection-string: ${SERVICEBUS_CONNECTION_STRING}
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-ukv714fluyvpdwzv.us.auth0.com/
+          audiences: https://api-pedidos-360.azurewebsites.net
